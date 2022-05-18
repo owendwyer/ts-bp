@@ -1,0 +1,42 @@
+{
+  "name": "ts-bp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "multi": "webpack-dev-server --config webpack.multi.dev.config.js",
+    "cold": "webpack-dev-server --no-live-reload --config webpack.dev.config.js",
+    "build": "webpack --mode development --config webpack.config.js",
+    "production": "npm version patch --no-git-tag-version && webpack --mode production --config webpack.config.js",
+    "netlify": "webpack --mode production --config webpack.config.js",
+    "combine": "gulp combine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/howler": "^2.2.1",
+    "@types/pixi.js": "^4.8.8",
+    "@types/webfontloader": "^1.6.32",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "gsap": "^3.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "npm-check-updates": "^13.0.1",
+    "pixi.js": "^5.3.10",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.1.5",
+    "webfontloader": "^1.6.28",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "howler": "^2.2.1"
+  }
+}

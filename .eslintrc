@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "OPD_ENV": "readonly"
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": 0,
+    "indent": ["error", "tab"],
+    "no-tabs": 0,
+    "space-infix-ops": 2,
+    "keyword-spacing": 2,
+    "space-before-blocks": 2,
+    "comma-spacing": 2,
+    "spaced-comment": 0,
+    "object-curly-spacing": ["error", "always"],
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 1, "maxEOF": 0, "maxBOF": 0 }
+    ],
+    "semi-spacing": ["error", { "before": false, "after": true }],
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+    "comma-dangle": ["error", "never"],
+    "semi": 2,
+    "padded-blocks": ["error", "never"],
+    "prefer-const": 0,
+    "space-before-function-paren": ["error", "never"],
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
+    "max-len": [0, { "code": 100 }],
+    "no-mixed-spaces-and-tabs": "error",
+    "prefer-template": 0,
+    "prefer-destructuring": 0,
+    "object-curly-newline": 0,
+    "import/no-mutable-exports": 0,
+    "no-param-reassign": 0,
+    "func-names": 0,
+    "quotes": 0,
+    "class-methods-use-this": 0,
+    "no-console": 0,
+    "no-unused-vars": 1,
+    "import/no-named-as-default": 0
+  }
+}
