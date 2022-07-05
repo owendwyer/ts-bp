@@ -18,7 +18,6 @@ export default class View extends PIXI.Container {
 	private audioButton:AudioButton;
 
 	private audioPlayer:AudioPlayer;
-	private hashObj:hashObjType;
 
 	private currentView:AbstractView;
 	private nextView:AbstractView;
@@ -37,8 +36,6 @@ export default class View extends PIXI.Container {
 		this.audioPlayer = new AudioPlayer(resManager.getAudioPath());
 		this.audioButton = new AudioButton(res);
 		this.audioButton.hidePlayBut();
-
-		this.hashObj = getHashObj();
 
 		this.addChild(this.background,this.audioButton);
 
